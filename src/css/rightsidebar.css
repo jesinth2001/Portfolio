@@ -1,0 +1,95 @@
+.rightsidebar
+{
+    width: 5%;
+    height: 100%;
+   
+}
+
+.nav-cont
+{   background-color:#2e2e2e;
+    width:100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.nav-bar
+{
+    width:30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    
+}
+.nav-bar span
+{
+    width: 80%;
+    height: 3px;
+    background-color:rgb(152, 151, 151);
+  
+    border-radius: 5px;
+    position: absolute;
+    transition: transform 0.5s,top 0.5s;
+  
+}
+.nav-bar .line1
+{
+ top: 5px;
+}
+.nav-bar .line2
+{
+    top: 12px;
+}
+.nav-bar .line3
+{
+    top:19px;
+}
+.nav-bar .change-line1
+{
+   
+    top:12px;
+    transform: rotate(45deg);
+  
+}
+.nav-bar .change-line2
+{
+    transform: translateX(150%);
+    top: 12px;
+}
+.nav-bar .change-line3
+{
+    top:12px;
+    transform: rotate(-45deg);
+}
+.title
+{
+    background-color: #222;
+    width:100%;
+    height: 70%; 
+    color: rgb(152, 151, 151);
+    text-transform: uppercase;
+    font-weight: 400;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+.title div
+{
+   
+  
+    
+    transform: rotate(90deg);
+}
+.settings
+{
+    background-color:#2e2e2e;
+    width:100%;
+    height: 20%;
+}

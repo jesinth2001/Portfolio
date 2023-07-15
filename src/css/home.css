@@ -1,0 +1,238 @@
+
+.homepage
+{
+ padding: 0;
+  margin: 0;
+  overflow: hidden;
+  width: 100%;
+ 
+  
+}
+.banner
+{
+box-sizing: border-box;
+width: 100%;
+height: 250px;
+margin-top: 10px;
+padding: 10px;
+display: flex;
+background-color:#222;
+/* background-image: url("C:\Users\Tringapps-user9\React Projects\portfolio\src\coverimage.jpg"); */
+background-size: cover;
+background-repeat: no-repeat;
+position: relative;
+}
+
+.headlines 
+{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+   
+    
+}
+.headlines h1
+{
+    width: 85%;
+   letter-spacing:2px;
+   font-weight: 800;
+   color: white;
+   text-shadow: 0px 0px 5px rgb(252, 167, 10);
+ font-family: Arial, Helvetica, sans-serif;
+
+}
+.headlines h4
+{
+    margin: 0;
+    padding: 0;
+    letter-spacing: 3px;
+    width: 90%;
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    color: white;
+    overflow: hidden;
+    
+}
+.headlines h4::before
+{
+content:"";
+border-left: 3px solid yellow;
+position: absolute;
+width: 100%;
+left:98%;
+height: 100%;
+background-color: #222;
+animation:typing 5s steps(35) ;
+animation-timing-function: left;
+animation-iteration-count: 1;
+
+}
+
+.btn-cont
+{
+    width: 90%;
+    height: 40px;
+}
+.btn-cont button
+{
+    background-color:rgb(252, 186, 21) ;
+    padding: 12px 18px;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+
+}
+.headlines h4 span
+{
+    margin:5px;
+   
+}
+.code
+{
+    color:rgb(252, 186, 21);
+    font-size: 20px;
+}
+.records
+{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 10px;
+    
+}
+.records div
+{
+    width: 20%;
+    align-items: center;
+    color:white;
+    display: flex;
+    gap: 10px;
+    text-transform: capitalize;
+}
+.records div span
+{
+    color:rgb(252, 186, 21);
+    font-weight: 800;
+    font-size: 27px;
+}
+.service
+{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color:white;
+    text-transform: capitalize;
+    font-size: 22px;
+    font-weight: 700;
+
+}
+.allservices
+{
+    width: 100%;
+    display: flex;
+    height: 400px;
+    gap: 30px;
+    flex-wrap: wrap;
+   
+}
+.box
+{
+    width: 31%;
+    color: white;
+    height: 180px;
+    background-color: #222222cc;
+    display: flex;
+    flex-direction: column;
+  
+   
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 500ms;
+}
+.box h3
+{
+    width: 80%;
+}
+.box h5
+{
+    margin: 0;
+    padding: 0;
+    color: rgb(152, 151, 151);
+    width: 80%;
+}
+.trans-over
+{
+    width: 100%;
+    height: 50px;
+    background-color:rgb(252, 186, 21);
+    position: absolute;
+    transform: translateY(360%);
+    transition: transform 500ms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.trans-over a
+{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.box:hover .trans-over
+{
+    transform: translateY(255%);
+}
+.box:hover
+{
+    transform: scale(1.1);
+}
+.skillset
+{
+    width:100%;
+    box-sizing:border-box;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #141414;
+     border:2px solid #222;
+}
+.skillset h3
+{
+    width: 80%;
+    display: flex;
+    gap: 20px;
+    color: rgb(152, 151, 151)
+}
+.skillset h3 span
+{
+ color:rgb(252, 186, 21);
+}
+@keyframes typing
+{
+    0%
+    {
+        left: 0;
+
+    }
+    50%
+    {
+        left: 50%;
+    }
+    100%
+    {
+        left:98%
+    }
+   
+}
